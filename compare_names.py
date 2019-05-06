@@ -2,13 +2,23 @@
 
 
 
-list = []
-while True:
-    name = input("Input a name:")
-    if name == "done":
-        break
-    else:
-        list.append(name)
-        list.sort()
-        continue
-print(list)
+# list = []
+# while True:
+#     name = input("Input a name:")
+#     if name == "done":
+#         break
+#     else:
+#         list.append(name)
+#         list.sort()
+#         continue
+# print(list)
+
+def sort_names(name1,name2):
+    if name1 > name2:
+        print(name2)
+        print(name1)
+    if name2 > name1:
+        print(name1)
+        print(name2)
+
+print(sort_names("Weekie","Alicia"))

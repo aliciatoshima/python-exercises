@@ -14,5 +14,4 @@ def my_max(list):
     return maxx
 
 
-
 print(my_max(my_list))

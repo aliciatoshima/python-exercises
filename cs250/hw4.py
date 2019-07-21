@@ -1,30 +1,42 @@
 ## Homework 4
 
-#1 Fibonacci Function
+
+#1 fibonacci function
 
 def fib(n):
-    list = []
-    sum = 0
-    i = 0
+    x = 1
+    y = 1
 
-    if i == 0:
-        sum = 0
-        i = i+1
-        return sum
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+        i = i + 1
 
-    if i == 1:
-        sum = 1
-        i = i+1
-        return sum
-
-    while i < n+1:
-        sum = fib(i-1) + fib(i-2)
-        i = i +1
+    if n > 2:
+        i = 3
+        while i < n+1:
+            sum = x + y
+            y = x
+            x = sum
+            i = i + 1
+            #print(x)
+            #print(y)
     return sum
-    return i
 
-    print(sum)
-    return "A"
+print(fib(6))
 
 
-fib(3)
+
+
+#2 Recursive Fibonnaci
+
+def fibonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    elif n > 1:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+print(fibonacci(6))

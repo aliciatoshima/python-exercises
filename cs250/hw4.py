@@ -40,3 +40,21 @@ def fibonacci(n):
         return fibonacci(n-1) + fibonacci(n-2)
 
 print(fibonacci(6))
+
+#6
+def move_disk(i):
+    x = int(format(i, "b"))
+    if x % 2 == 1:
+        return 1
+    if x % 100000 == 0:
+        return 6
+    if x % 10000 == 0:
+        return 5
+    if x % 1000 == 0:
+        return 4
+    if x % 100 == 0:
+        return 3
+    if x % 10 == 0:
+        return 2
+
+## I know we're supposed to use recursion, but I couldn't figure it out....

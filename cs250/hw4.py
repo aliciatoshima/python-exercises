@@ -58,3 +58,31 @@ def move_disk(i):
         return 2
 
 ## I know we're supposed to use recursion, but I couldn't figure it out....
+
+
+#7
+## E => N
+# def e_to_n(n):
+#     if n == 2:
+#         return 0
+#     elif n % 4 == 0:
+#         return 2*n
+#     else:
+#         return 2*n+1
+#
+# print(e_to_n(2))
+# print(e_to_n(4))
+# print(e_to_n(6))
+
+## N => Z
+# def n_to_z(n):
+#     if n == 1:
+#         return 0
+#     elif n % 4 == 0:
+#         return 2*n
+#     else:
+#         return 2*n+1
+#
+# print(n_to_z())
+# print(n_to_z(4))
+# print(n_to_z(6))

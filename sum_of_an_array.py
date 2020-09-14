@@ -19,5 +19,3 @@ def my_sum_2(array):
     return curr_sum
 
 print(my_sum_2(array2))
-
-#test
